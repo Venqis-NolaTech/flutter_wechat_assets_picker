@@ -138,7 +138,7 @@ class PickMethod {
           context,
           pickerConfig: AssetPickerConfig(
             maxAssets: maxAssetsCount,
-            selectedAssets: assets,
+            //selectedAssets: assets,
             specialItemPosition: SpecialItemPosition.prepend,
             specialItemBuilder: (
               BuildContext context,
