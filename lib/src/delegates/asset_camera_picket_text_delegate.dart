@@ -1,5 +1,4 @@
-import 'dart:ui';
-
+import 'package:flutter/rendering.dart';
 import 'package:wechat_camera_picker/wechat_camera_picker.dart';
 
 /// All text delegates.
@@ -7,7 +6,7 @@ const List<CameraPickerTextDelegate> cameraPickerTextDelegates =
     <CameraPickerTextDelegate>[
   CameraPickerTextDelegate(),
   EnglishCameraPickerTextDelegate(),
-  SpanishAssetPickerTextDelegate(),
+  SpanishCameraPickerTextDelegate(),
 ];
 
 /// Obtain the text delegate from the given locale.
@@ -25,8 +24,8 @@ CameraPickerTextDelegate cameraPickerTextDelegateFromLocale(Locale? locale) {
 }
 
 /// Text delegate implements with Spanish.
-class SpanishAssetPickerTextDelegate extends CameraPickerTextDelegate {
-  const SpanishAssetPickerTextDelegate();
+class SpanishCameraPickerTextDelegate extends CameraPickerTextDelegate {
+  const SpanishCameraPickerTextDelegate();
 
   @override
   String get languageCode => 'es';
